@@ -18,4 +18,9 @@ describe('bowling', () => {
     expect(bowlingScore(rolls)).toEqual(expected);
    });
 
+   it('should calculate basic score with spare', ()=> {
+     const rolls = [[2, 8], [0, 2]];
+     expect(bowlingScore(rolls)).toEqual(14);
+    });
+
 });
